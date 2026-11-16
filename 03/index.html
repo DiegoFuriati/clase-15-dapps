@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo 3 — Transacciones ERC-20</title>
+  </head>
+  <body>
+    <main>
+      <h1>Demo 3 — Transacciones ERC-20</h1>
+      <p>Enviar transferencias y aprobaciones; diferenciar el hash de la confirmación.</p>
+      <section class="panel">
+        <h2>Operaciones</h2>
+        <label for="token">Dirección del contrato DORT en Sepolia</label>
+      <input id="token" type="text" placeholder="0x..." autocomplete="off" />
+<label for="destino">Dirección destinataria / spender</label>
+      <input id="destino" type="text" placeholder="0x..." autocomplete="off" />
+      <label for="cantidad">Cantidad de DORT</label>
+      <input id="cantidad" type="text" inputmode="decimal" value="5" />
+        <div class="actions">
+                    <button id="transferir">Transferir tokens</button>
+          <button id="aprobar">Autorizar (approve)</button>
+          <button id="allowance">Consultar allowance</button>
+        </div>
+      </section>
+      <section class="panel" aria-live="polite">
+        <h2>Resultado</h2>
+        <pre id="resultado">Todavía no se ejecutó ninguna operación.</pre>
+      </section>
+      <small>Clase 15 · Taller de Tecnologías 2 · Ethereum Sepolia</small>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </body>
+</html>

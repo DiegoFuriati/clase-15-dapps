@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo 1 — Conexión y firma</title>
+  </head>
+  <body>
+    <main>
+      <h1>Demo 1 — Conexión y firma</h1>
+      <p>Diferenciar provider y signer; consultar la cuenta y firmar un mensaje sin transacción.</p>
+      <section class="panel">
+        <h2>Operaciones</h2>
+                <div class="actions">
+                    <button id="conectar">Conectar MetaMask</button>
+          <button id="saldo">Consultar saldo ETH</button>
+          <button id="firmar">Firmar mensaje</button>
+        </div>
+      </section>
+      <section class="panel" aria-live="polite">
+        <h2>Resultado</h2>
+        <pre id="resultado">Todavía no se ejecutó ninguna operación.</pre>
+      </section>
+      <small>Clase 15 · Taller de Tecnologías 2 · Ethereum Sepolia</small>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </body>
+</html>

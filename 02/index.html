@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo 2 — ABI y lecturas</title>
+  </head>
+  <body>
+    <main>
+      <h1>Demo 2 — ABI y lecturas</h1>
+      <p>Consultar un ERC-20 y observar qué pasa si usamos una función que el contrato no implementa.</p>
+      <section class="panel">
+        <h2>Operaciones</h2>
+        <label for="token">Dirección del contrato DORT en Sepolia</label>
+      <input id="token" type="text" placeholder="0x..." autocomplete="off" />
+        <div class="actions">
+                    <button id="leer">Consultar token y saldo</button>
+          <button id="abi-incorrecto">Probar ABI incorrecto</button>
+        </div>
+      </section>
+      <section class="panel" aria-live="polite">
+        <h2>Resultado</h2>
+        <pre id="resultado">Todavía no se ejecutó ninguna operación.</pre>
+      </section>
+      <small>Clase 15 · Taller de Tecnologías 2 · Ethereum Sepolia</small>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </body>
+</html>

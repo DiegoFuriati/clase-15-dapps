@@ -1,0 +1,17 @@
+{
+  "name": "clase15-01-conexion-y-firma",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "ethers": "^6.15.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
